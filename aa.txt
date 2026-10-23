@@ -1,0 +1,18 @@
+CREATE TABLE sickers (
+    id INT AUTO_INCREMENT PRIMARY KEY,           -- Auto-increment unique ID (not displayed to user)
+    sicker_id VARCHAR(10) NOT NULL UNIQUE,      -- Sicker ID like S001, S002
+    sicker_name VARCHAR(100) NOT NULL,
+    sicker_age INT(3) NOT NULL,
+    sicker_gender ENUM('Male','Female') NOT NULL,
+    sicker_mobile VARCHAR(10) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    area VARCHAR(100) NOT NULL,
+    request_date DATE NOT NULL,
+    slot ENUM('Morning','Afternoon','Evening') NOT NULL,
+    request_type ENUM('Home Service','Office Service') NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    image VARCHAR(255) DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+

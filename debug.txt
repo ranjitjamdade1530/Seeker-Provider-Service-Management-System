@@ -1,0 +1,6 @@
+Array
+(
+    [id] => P007
+    [type] => provider
+    [status] => active
+)
